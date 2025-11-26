@@ -8,7 +8,31 @@
 		<title>Astro Basics</title>
 	</head>
 	<body>
-		<slot />
+		<div class="flex justify-between items-center py-4">
+		<header>
+			<a href="/" class="font-bold text-2xl hover:text-blue-500">Egghead Astro</a>
+		</header>
+
+
+		<nav>
+			<ul class="flex gap-4">
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/blog">Blog</a></li>
+				<li>
+					<a href="/">GitHub</a>
+				</li>
+			</ul>
+		</nav>
+		</div>
+		<main class="flex-1">
+		<slot />	
+		</main>
+
+		<footer class="w-full mx-auto text-center py-4">
+			<span>{new Date().getFullYear()} Kyryl Shchabelskyi.</span>
+		</footer>
+
 	</body>
 </html>
 
