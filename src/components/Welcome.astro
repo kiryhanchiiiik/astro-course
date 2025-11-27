@@ -7,10 +7,15 @@ const posts = await getCollection("blog");
 ---
 
 <div id="container">
-  <p>
-    Hey, my name is <b>Kyryl Shchabelskyi</b>. So just hi motherfuckers, bitch.
-  </p>
-
+  <div class="flex h-64 flex-col items-start justify-center">
+    <h1 class="text-heading-1 text-3xl font-semibold">
+      Hello, I'm Kyryl Shchabelskyi.
+    </h1>
+    <p class="mt-2">
+      Hey, my name is <b>Kyryl Shchabelskyi</b>. So just hi motherfuckers,
+      bitch.
+    </p>
+  </div>
   <div class="flex flex-col">
     <h2 class="text-2xl font-semibold">Recent blog posts:</h2>
     <ol class="mt-4 list-decimal space-y-2 px-10">
