@@ -1,7 +1,23 @@
 ---
+import { Image } from "astro:assets";
+
+import mandem from "../assets/mandem.jpg";
+
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="About">
-  <p >Hello, friends this is Kyryl</p>
+  <Image
+    width={512}
+    quality="max"
+    class="rounded-full"
+    src={mandem}
+    alt="Mandem"
+  />
+  <p>
+    Hello, friends this is <b>Kyryl Shchabelskyi</b>. Lorem ipsum dolor, sit
+    amet consectetur adipisicing elit. Eos ducimus delectus, amet magnam
+    mollitia dolorem, veritatis ipsa odit distinctio, voluptatibus optio porro
+    sapiente maxime aspernatur quia harum ut facere. Voluptas.
+  </p>
 </Layout>
