@@ -7,17 +7,19 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="About">
-  <Image
-    width={512}
-    quality="max"
-    class="rounded-full"
-    src={mandem}
-    alt="Mandem"
-  />
-  <p>
-    Hello, friends this is <b>Kyryl Shchabelskyi</b>. Lorem ipsum dolor, sit
-    amet consectetur adipisicing elit. Eos ducimus delectus, amet magnam
-    mollitia dolorem, veritatis ipsa odit distinctio, voluptatibus optio porro
-    sapiente maxime aspernatur quia harum ut facere. Voluptas.
-  </p>
+  <div class="flex flex-col items-center gap-7">
+    <Image
+      width={300}
+      quality="max"
+      class="rounded-full"
+      src={mandem}
+      alt="Mandem"
+    />
+    <p>
+      Hello, friends this is <b>Kyryl Shchabelskyi</b>. Lorem ipsum dolor, sit
+      amet consectetur adipisicing elit. Eos ducimus delectus, amet magnam
+      mollitia dolorem, veritatis ipsa odit distinctio, voluptatibus optio porro
+      sapiente maxime aspernatur quia harum ut facere. Voluptas.
+    </p>
+  </div>
 </Layout>
